@@ -1,0 +1,19 @@
+{
+    "files.encoding": "utf-8",
+    "terminal.integrated.defaultProfile.windows": "PowerShell",
+    "terminal.integrated.profiles.windows": {
+        "PowerShell": {
+            "source": "PowerShell",
+            "args": ["-NoExit", "-Command", "& {chcp 65001 > $null}"]
+        }
+    },
+    "code-runner.executorMap": {
+        "cpp": "cd $dir && g++ $fileName -o $fileNameWithoutExt `pkg-config --cflags --libs opencv4` && $dir$fileNameWithoutExt"
+    },
+    "files.associations": {
+        "ostream": "cpp",
+        "source_location": "cpp"
+    }
+    
+}
+
